@@ -16,15 +16,24 @@ cd NQueen
 ```
 
 ## Usage
+Run the program with a specified board size:
 ```bash
-python nqueen.py <N>
+python nqueen.py 8
 ```
+This will solve the 8-Queens problem.
 
 ## Example Output
 ```
 Solution 1:
-. Q . .
-. . . Q
-Q . . .
-. . Q .
+. Q . . . . . .
+. . . . Q . . .
+. . . . . . Q .
+. . . . . . . Q
+. . . Q . . . .
+. . . . . Q . .
+Q . . . . . . .
+. . Q . . . . .
+
+Solution 2:
+...
 ```
