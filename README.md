@@ -1,78 +1,30 @@
-N-Queen Solver
+# N-Queen Solver
 
-Overview
+## Overview
+The **N-Queen Solver** is a C++ implementation of the N-Queens problem, which involves placing N queens on an N×N chessboard such that no two queens attack each other. The solution is computed using backtracking, a recursive search algorithm.
 
-This repository provides an implementation of the N-Queen problem, a classic combinatorial problem that involves placing N queens on an N×N chessboard so that no two queens threaten each other. This means that no two queens can be in the same row, column, or diagonal.
+## Features
+- Solves N-Queen problem for any **N ≥ 1**.
+- Implements **backtracking** for efficient searching.
+- Prints solutions in a structured format.
+- Can handle larger values of N efficiently.
 
-Features
-
-Supports solving the N-Queen problem for any N ≥ 1.
-
-Uses backtracking to efficiently find all possible solutions.
-
-Provides a simple and clean implementation in Python.
-
-Installation
-
-Clone this repository using:
-
+## Installation
+```bash
 git clone https://github.com/roycaspi/NQueen.git
 cd NQueen
+```
 
-Ensure you have Python installed (Python 3.x recommended).
-
-Usage
-
-Run the script to solve the N-Queen problem for a given N:
-
+## Usage
+```bash
 python nqueen.py <N>
+```
 
-Example:
-
-python nqueen.py 8
-
-This will solve the 8-Queen problem and print the possible solutions.
-
-Algorithm
-
-The implementation uses the backtracking algorithm:
-
-Place a queen in a row and try different column positions.
-
-If a valid position is found, recursively move to the next row.
-
-If all queens are placed successfully, save the solution.
-
-If no valid position is found, backtrack and try a different column.
-
-Example Output
-
-For N = 4, a sample output could be:
-
+## Example Output
+```
 Solution 1:
 . Q . .
 . . . Q
 Q . . .
 . . Q .
-
-Solution 2:
-. . Q .
-Q . . .
-. . . Q
-. Q . .
-
-Complexity Analysis
-
-The time complexity of the backtracking approach is approximately O(N!), though pruning techniques significantly reduce the search space.
-
-Contributions
-
-Contributions are welcome! If you'd like to improve the implementation, submit a pull request or open an issue.
-
-License
-
-This project is licensed under the MIT License.
-
-Contact
-
-For any inquiries or discussions, feel free to reach out via the GitHub Issues section.
+```
